@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SKULLHEART</title>
+    <link rel="stylesheet/less" type="text/css" href="./styles.less" />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+    <meta name="theme-color" content="#F0DB4F">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="shortcut icon" type="image/png" href="skullheart.PNG">
+    <link rel="apple-touch-icon" href="skullheart.PNG">
+    <link rel="apple-touch-startup-image" href="skullheart.PNG">
+    <link rel="manifest" href="manifest.json">
+
+</head>
+    <body style="background-color: #DA5E5E;">
+    <form name="f1">
+        <input type="button" style="background-color: #717171; color: white;" value="<<" onclick="atras()">
+        <img src="imag0.jpg" width="400" height="450" id="imag">
+        <input type="button" style="background-color: #717171; color: white;" value=">>" onclick="adelante()">
+    </form>
+    <script type="text/javascript" src="main.js"></script>
+    <form class = "container">
+      <div class="form-group">
+          <label for="exampleFormControlInput1">Introduzca su nombre</label>
+          <input type="email" class="form-control" id="name" placeholder="Nombre(s) y Apellidos">
+      </div>
+      <div class="form-group">
+          <label for="exampleFormControlInput1">Número celular a 10 dígitos</label>
+          <input type="email" class="form-control" id="phone" placeholder="999-999-9999">
+        </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Introduce tu Email</label>
+      <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Área de atención</label>
+      <input type="email" class="form-control" id="area" placeholder="Urgencias">
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect2">Edad</label>
+      <input type="email" class="form-control" id="edad" placeholder="Ej: 25 años">
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Breve descripción del motivo de cita</label>
+      <textarea class="form-control" id="descripcion" rows="3" placeholder="Introduzca su motivo aquí..."></textarea>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-lg-2">
+            <button id="enviar" type="button" class="btn btn-warning">Enviar</button>
+        </div>
+    </div>
+    <div class="col-md-6" id="div"></div>
+  </form>
+</body>
+</html>
